@@ -1,5 +1,9 @@
 # move-js
 
+> **⚠️ ARCHIVED**
+> 
+> This project has been archived and is no longer maintained. The project cannot be built or used because the forked libraries (lispking/* etc.) referenced in Cargo.toml have been removed. Please look for actively maintained alternatives if you need similar functionality.
+
 Javascript version of the move language compiler and disassemble
 
 ## Features
