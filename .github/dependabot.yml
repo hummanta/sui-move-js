@@ -1,0 +1,41 @@
+version: 2
+updates:
+  # Main project npm dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    groups:
+      dev-dependencies:
+        patterns:
+          - "@babel/*"
+          - "@rollup/*"
+          - "@types/*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Example project npm dependencies
+  - package-ecosystem: "npm"
+    directory: "/examples/sui-playground"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "deps(playground)"
+
+  # Cargo (Rust) dependencies
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "deps(rust)"

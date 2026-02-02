@@ -11,7 +11,7 @@
   "devDependencies": {
     "rimraf": "^6.0.1",
     "typescript": "^4.5.4",
-    "vite": "^2.9.9"
+    "vite": "^6.1.7"
   },
   "dependencies": {
     "@movefuns/move-js": "../../",
