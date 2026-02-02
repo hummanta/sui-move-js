@@ -1,9 +1,13 @@
+# Disabled: Cargo.toml dependencies no longer exist (lispking libraries removed)
+# Re-enable this workflow after updating Rust dependencies
 on:
-  push:
-    branches: [ 'main', 'release-**' ]
-  pull_request:
-    branches: [ 'main', 'release-**' ]
-name: Test
+  workflow_dispatch:  # Manual trigger only
+# Disabled automatic triggers:
+#  push:
+#    branches: [ 'main', 'release-**' ]
+#  pull_request:
+#    branches: [ 'main', 'release-**' ]
+name: Test (Disabled)
 jobs:
   test:
     strategy:
